@@ -1,0 +1,25 @@
+@model webdev.Models.Type
+<div class="container-fluid">
+    <div class="main-pannel">
+        <div class="content-wrapper">
+            <div class="row">
+                <div class="col-md-6 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Edit</h4>
+                            <p class="card-description"></p>
+                            <input asp-for="type" hidden>
+                            <form method="post" class="form-horizontal form-material mx-2">
+                                    <input asp-for="type" type="text" 
+                                    class="form-control ps-0 form-control-line">
+                                <br>
+                                    <input type="submit" class="btn btn-success mx-auto mx-md-0 text-white" value="update">
+                                    <a asp-action="type" class=" btn btn-danger mx-auto mx-md-0 text-white"> back</a>
+                            </form>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
